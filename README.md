@@ -18,6 +18,6 @@
 🛍️ Visit our website to explore the full range of our products!
 
 ## Contact Us
-✉️ For inquiries, reach out to us at support@slaybynyawi.com
+✉️ For inquiries, reach out to us at njueluxestyles@gmail.com
 
 ✨ Let's Slay Together! ✨
