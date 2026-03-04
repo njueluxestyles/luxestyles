@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slay by Nyawi | Premium Luxe KE</title>
+    
+    <title>Slay by Nyawi | Premium Silk Bonnets & Hair Accessories Kenya</title>
+    <meta name="description" content="Shop luxury silk bonnets, scrunchies, and claw clips by Nyawi. Premium hair protection and style for the modern Kenyan woman. Fast delivery to KCA, UoN, KU, and CBD.">
+    <meta name="keywords" content="Silk bonnets Nairobi, hair accessories Kenya, Slay by Nyawi, Njue Luxe Styles, satin scrunchies Kenya, hair clips Nairobi, KCA university delivery, hair care Kenya">
+    <link rel="canonical" href="https://njueluxestyles.github.io/luxestyles/" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Slay by Nyawi | The 254 Crown Experience 🦋">
+    <meta property="og:description" content="Luxury hair essentials for the modern Queen. Shop Silk Bonnets, Scrunchies, and Clips.">
+    <meta property="og:image" content="https://i.postimg.cc/BQ1NJwGs/IMG-20260227-WA0007.jpg">
+    <meta property="og:url" content="https://njueluxestyles.github.io/luxestyles/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Store",
+      "name": "Slay by Nyawi",
+      "image": "https://i.postimg.cc/BQ1NJwGs/IMG-20260227-WA0007.jpg",
+      "description": "Premium silk hair accessories and bonnets in Nairobi, Kenya.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "priceRange": "KSh 70 - KSh 1000",
+      "telephone": "+254798639988"
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --brand-pink: #FF007F;
@@ -22,24 +51,6 @@
             background-size: cover; background-position: center; background-attachment: fixed;
         }
 
-		/* LOGO */
-		.logo{
-		  line-height:1;
-		}
-		.logo-main{
-		  font-weight:900;
-		  letter-spacing:-0.04em;
-		}
-		.logo-sub{
-		  font-size:9px;
-		  letter-spacing:.4em;
-		  opacity:.7;
-		}
-		.logo-script{
-		  font-family:'Pacifico',cursive;
-		  font-size:11px;
-		  color:var(--pink);
-		}
         .luxe-circle {
             border: 8px solid white;
             border-radius: 50%;
@@ -50,7 +61,6 @@
         }
         .luxe-circle:hover { transform: scale(1.05) rotate(5deg); }
 
-        /* Modal Overlay */
         #orderModal {
             display: none;
             position: fixed;
@@ -88,8 +98,6 @@
             font-size: 14px;
         }
 
-        .input-box:focus { border-color: var(--brand-pink); outline: none; }
-
         .location-btn {
             background: #fdf2f8;
             color: #be185d;
@@ -99,49 +107,42 @@
             border-radius: 8px;
             cursor: pointer;
             transition: 0.3s;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 15px;
         }
-        .location-btn:hover { background: #fce7f3; }
         .location-btn.success { background: #dcfce7; color: #15803d; }
     </style>
 </head>
 <body>
 
-	<nav class="fixed w-full z-50 bg-white/80 backdrop-blur border-b px-6 py-4 flex justify-between items-center">
-	  
-	  <!-- LOGO TEXT -->
-	  <div class="logo text-[#912F56]">
-		<div class="logo-main text-xl">NJUE</div>
-		<div class="logo-sub">LUXE&nbsp;STYLES</div>
-		<div class="logo-script">Slay by Nyawi</div>
-	  </div>
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur border-b px-6 py-4 flex justify-between items-center" role="navigation">
+        <div class="logo text-[#912F56]">
+            <span class="font-black text-xl block leading-none">NJUE</span>
+            <span class="text-[9px] tracking-[.4em] opacity-70 block">LUXE STYLES</span>
+            <span class="cursive text-[11px] text-[#FF007F]">Slay by Nyawi</span>
+        </div>
 
-	  <button onclick="openModal()" class="bg-[#FF007F] text-white px-5 py-2 rounded-full font-black text-[10px] tracking-widest hover:scale-105 transition">
-		ORDER NOW
-	  </button>
-	</nav>
+        <button onclick="openModal()" class="bg-[#FF007F] text-white px-5 py-2 rounded-full font-black text-[10px] tracking-widest hover:scale-105 transition">
+            ORDER NOW
+        </button>
+    </nav>
 
     <header class="h-screen flex items-center justify-center text-center text-white hero-vibrant px-4">
         <div class="max-w-4xl">
-            <h1 class="text-7xl md:text-[10rem] cursive mb-2 drop-shadow-xl">Slay by Nyawi</h1>
-            <p class="text-lg md:text-2xl font-light italic mb-12 tracking-[0.3em] text-pink-50">THE 254 CROWN EXPERIENCE 🦋</p>
+            <h1 class="text-6xl md:text-[10rem] cursive mb-2 drop-shadow-xl">Slay by Nyawi</h1>
+            <p class="text-lg md:text-2xl font-light italic mb-12 tracking-[0.3em] text-pink-50 uppercase">The 254 Crown Experience 🦋</p>
             <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <button onclick="openModal()" class="bg-[#D4AF37] text-white px-12 py-5 rounded-full font-black uppercase text-xs tracking-widest shadow-2xl hover:bg-[#912F56] transition">Start Your Professional Order 👑</button>
+                <a href="#collection" class="bg-[#D4AF37] text-white px-12 py-5 rounded-full font-black uppercase text-xs tracking-widest shadow-2xl hover:bg-[#912F56] transition">Browse Collection</a>
             </div>
         </div>
     </header>
 
-    <section class="py-32 px-6">
+    <section class="py-32 px-6 bg-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div class="relative group">
-                <div class="absolute inset-0 border-2 border-[#D4AF37] translate-x-4 translate-y-4 rounded-[3rem] group-hover:translate-x-6 group-hover:translate-y-6 transition duration-500"></div>
-                <img src="https://i.postimg.cc/BQ1NJwGs/IMG-20260227-WA0007.jpg" class="relative z-10 rounded-[3rem] shadow-2xl w-full" alt="Nyawi">
+                <div class="absolute inset-0 border-2 border-[#D4AF37] translate-x-4 translate-y-4 rounded-[3rem]"></div>
+                <img src="https://i.postimg.cc/BQ1NJwGs/IMG-20260227-WA0007.jpg" class="relative z-10 rounded-[3rem] shadow-2xl w-full" alt="Nyawi - Founder of Slay by Nyawi Kenya">
             </div>
             <div>
-                <h2 class="text-6xl text-[#912F56] italic mb-8">Meet <span class="text-[#FF007F]">Nyawi.</span></h2>
+                <h2 class="text-5xl text-[#912F56] italic mb-8">Nairobi's Choice for <span class="text-[#FF007F]">Hair Protection.</span></h2>
                 <p class="text-stone-600 leading-relaxed text-lg mb-8">
                     "I believe luxury shouldn't be complicated. My goal is to help the modern Kenyan woman protect her crown without sacrificing her style. From premium silk to handcrafted clips, we bring the best of Nairobi chic to your doorstep."
                 </p>
@@ -153,118 +154,59 @@
         </div>
     </section>
 
-	<section id="collection" class="py-32 bg-[#912F56] text-white">
-		<div class="max-w-7xl mx-auto px-6 text-center">
+    <section id="collection" class="py-32 bg-[#912F56] text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl md:text-7xl italic mb-6 uppercase">Luxury Hair Essentials</h2>
+            <p class="text-pink-100 tracking-widest text-xs mb-24 uppercase">Premium Silk • Zero Breakage • Nairobi Wide Delivery</p>
 
-			<h2 class="text-5xl md:text-7xl italic mb-6 uppercase">Signature Elements</h2>
-			<p class="text-pink-100 tracking-widest text-xs mb-24 uppercase">
-				Luxury essentials • Transparent pricing
-			</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <article class="flex flex-col items-center group">
+                    <div class="luxe-circle w-64 h-64 mb-6">
+                        <img src="https://i.postimg.cc/kXhjP1XK/Whats-App-Image-2026-02-27-at-16-57-20-(2).jpg" alt="Premium Silk Scrunchies Nairobi" loading="lazy" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold italic mb-2">Silk Scrunchies</h3>
+                    <p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 70</p>
+                    <button onclick="openModal()" class="bg-[#D4AF37] text-[#912F56] px-8 py-3 rounded-full font-black text-xs uppercase">Order Now</button>
+                </article>
 
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+                <article class="flex flex-col items-center group">
+                    <div class="luxe-circle w-64 h-64 mb-6">
+                        <img src="https://i.postimg.cc/NfW1xWjH/Whats-App-Image-2026-02-27-at-16-57-20.jpg" alt="Luxury Silk Headbands Kenya" loading="lazy" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold italic mb-2">Headbands</h3>
+                    <p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 100</p>
+                    <button onclick="openModal()" class="bg-[#D4AF37] text-[#912F56] px-8 py-3 rounded-full font-black text-xs uppercase">Order Now</button>
+                </article>
 
-				<!-- BONNETS -->
-				<div class="flex flex-col items-center group">
-					<div class="luxe-circle w-72 h-72 mb-8">
-						<img src="https://i.postimg.cc/kXhjP1XK/Whats-App-Image-2026-02-27-at-16-57-20-(2).jpg?auto=format&fit=crop&q=80&w=800"
-							 class="w-full h-full object-cover">
-					</div>
+                <article class="flex flex-col items-center group">
+                    <div class="luxe-circle w-64 h-64 mb-6">
+                        <img src="https://i.postimg.cc/3NQkGHBC/Whats-App-Image-2026-02-27-at-16-57-19.jpg" alt="Strong Hold Claw Clips Nairobi" loading="lazy" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold italic mb-2">Claw Clips</h3>
+                    <p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 70</p>
+                    <button onclick="openModal()" class="bg-[#D4AF37] text-[#912F56] px-8 py-3 rounded-full font-black text-xs uppercase">Order Now</button>
+                </article>
 
-					<h3 class="text-3xl font-bold italic uppercase mb-2">Scrunchies</h3>
-					<p class="text-sm text-pink-100 mb-4">Premium silk • Hair protection</p>
+                <article class="flex flex-col items-center group">
+                    <div class="luxe-circle w-64 h-64 mb-6">
+                        <img src="https://i.postimg.cc/cLFTBFPv/Whats-App-Image-2026-02-27-at-16-57-20-(1).jpg" alt="Silk Hair Bows Nairobi" loading="lazy" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold italic mb-2">Hair Bows</h3>
+                    <p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 200</p>
+                    <button onclick="openModal()" class="bg-[#D4AF37] text-[#912F56] px-8 py-3 rounded-full font-black text-xs uppercase">Order Now</button>
+                </article>
+            </div>
+        </div>
+    </section>
 
-					<div class="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 w-full max-w-xs border border-white/20">
-						<p class="text-xs tracking-widest uppercase text-pink-200 mb-2">Starting from</p>
-						<p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 70</p>
-
-						<button onclick="openModal()"
-							class="w-full bg-[#D4AF37] text-[#912F56] py-3 rounded-full font-black text-xs tracking-widest hover:bg-white transition">
-							Order Scrunchies 👑
-						</button>
-					</div>
-				</div>
-
-				<!-- SCRUNCHIES -->
-				<div class="flex flex-col items-center group">
-					<div class="luxe-circle w-72 h-72 mb-8">
-						<img src="https://i.postimg.cc/NfW1xWjH/Whats-App-Image-2026-02-27-at-16-57-20.jpg?auto=format&fit=crop&q=80&w=800"
-							 class="w-full h-full object-cover">
-					</div>
-
-					<h3 class="text-3xl font-bold italic uppercase mb-2">Headbands</h3>
-					<p class="text-sm text-pink-100 mb-4">Soft silk • Zero breakage</p>
-
-					<div class="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 w-full max-w-xs border border-white/20">
-						<p class="text-xs tracking-widest uppercase text-pink-200 mb-2">Starting from</p>
-						<p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 100</p>
-
-						<button onclick="openModal()"
-							class="w-full bg-[#D4AF37] text-[#912F56] py-3 rounded-full font-black text-xs tracking-widest hover:bg-white transition">
-							Order Headbands ✨
-						</button>
-					</div>
-				</div>
-
-				<!-- CLAW CLIPS -->
-				<div class="flex flex-col items-center group">
-					<div class="luxe-circle w-72 h-72 mb-8">
-						<img src="https://i.postimg.cc/3NQkGHBC/Whats-App-Image-2026-02-27-at-16-57-19.jpg?auto=format&fit=crop&q=80&w=800"
-							 class="w-full h-full object-cover">
-					</div>
-
-					<h3 class="text-3xl font-bold italic uppercase mb-2">Claw Clips</h3>
-					<p class="text-sm text-pink-100 mb-4">Strong hold • Elegant finish</p>
-
-					<div class="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 w-full max-w-xs border border-white/20">
-						<p class="text-xs tracking-widest uppercase text-pink-200 mb-2">Starting from</p>
-						<p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 70</p>
-
-						<button onclick="openModal()"
-							class="w-full bg-[#D4AF37] text-[#912F56] py-3 rounded-full font-black text-xs tracking-widest hover:bg-white transition">
-							Order Clip 💎
-						</button>
-					</div>
-				</div>
-
-				<!-- HAIRBANDS -->
-				<div class="flex flex-col items-center group">
-					<div class="luxe-circle w-72 h-72 mb-8">
-						<img src="https://i.postimg.cc/cLFTBFPv/Whats-App-Image-2026-02-27-at-16-57-20-(1).jpg?auto=format&fit=crop&q=80&w=800"
-							 class="w-full h-full object-cover">
-					</div>
-
-					<h3 class="text-3xl font-bold italic uppercase mb-2">Hair bow</h3>
-					<p class="text-sm text-pink-100 mb-4">Strong hold • Generally Soft-touch</p>
-
-					<div class="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 w-full max-w-xs border border-white/20">
-						<p class="text-xs tracking-widest uppercase text-pink-200 mb-2">Starting from</p>
-						<p class="text-4xl font-black text-[#D4AF37] mb-4">KSh 200</p>
-
-						<button onclick="openModal()"
-							class="w-full bg-[#D4AF37] text-[#912F56] py-3 rounded-full font-black text-xs tracking-widest hover:bg-white transition">
-							Order Hair bow 💎
-						</button>
-					</div>
-				</div>
-				
-			</div>
-
-			<!-- PRICE NOTE -->
-			<p class="mt-20 text-xs text-pink-200 tracking-widest uppercase">
-				Prices vary by size, fabric & design • Delivery calculated on order
-			</p>
-
-		</div>
-	</section>
-
-    <div id="orderModal">
+    <div id="orderModal" role="dialog" aria-labelledby="modalTitle">
         <div class="modal-card">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-2xl font-bold text-[#912F56]">Professional Order ✨</h2>
-                <button onclick="closeModal()" class="text-gray-400 text-3xl hover:text-black">&times;</button>
+            <div class="flex justify-between items-center mb-6">
+                <h2 id="modalTitle" class="text-2xl font-bold text-[#912F56]">Start Your Order ✨</h2>
+                <button onclick="closeModal()" class="text-gray-400 text-3xl hover:text-black" aria-label="Close">&times;</button>
             </div>
 
-            <form id="slayForm" class="space-y-1">
+            <form id="slayForm" onsubmit="event.preventDefault(); sendToWhatsApp();">
                 <label class="text-[10px] font-black uppercase text-gray-400">Request Type</label>
                 <select id="reqType" class="input-box">
                     <option value="🛍️ NEW ORDER">Place a New Order</option>
@@ -272,116 +214,77 @@
                 </select>
 
                 <label class="text-[10px] font-black uppercase text-gray-400">Full Name</label>
-                <input type="text" id="custName" placeholder="Your Name" class="input-box" required>
+                <input type="text" id="custName" placeholder="e.g. Sarah Njeri" class="input-box" required>
 
                 <label class="text-[10px] font-black uppercase text-gray-400">Item Selection</label>
-                <input type="text" id="custItems" placeholder="e.g. 1 XL Bonnet, 2 Silk Scrunchies" class="input-box">
+                <input type="text" id="custItems" placeholder="e.g. 2 Pink Scrunchies, 1 Gold Clip" class="input-box">
 
-                <label class="text-[10px] font-black uppercase text-gray-400">Campus / Town Location</label>
-                <input type="text" id="custLoc" placeholder="e.g. KCA Main Campus" class="input-box" required>
+                <label class="text-[10px] font-black uppercase text-gray-400">Delivery Location (Campus/Town)</label>
+                <input type="text" id="custLoc" placeholder="e.g. KCA University / Ruiru" class="input-box" required>
 
-                <div id="locationWrapper">
-                    <button type="button" onclick="getLocation()" id="locBtn" class="location-btn">
-                        📍 Add My Precise Location (Optional)
-                    </button>
-                    <input type="hidden" id="geoCoords">
-                </div>
+                <button type="button" onclick="getLocation()" id="locBtn" class="location-btn mb-4 block w-full text-center">
+                    📍 Optional: Add Precise Location
+                </button>
+                <input type="hidden" id="geoCoords">
 
-                <button type="button" onclick="sendToWhatsApp()" class="w-full bg-[#25D366] text-white py-5 rounded-2xl font-black uppercase text-xs tracking-widest flex items-center justify-center gap-3 shadow-xl hover:scale-105 transition">
-                    Submit to WhatsApp 💬
+                <button type="submit" class="w-full bg-[#25D366] text-white py-5 rounded-2xl font-black uppercase text-xs tracking-widest flex items-center justify-center gap-3 shadow-xl hover:scale-105 transition">
+                    Send to WhatsApp 💬
                 </button>
             </form>
         </div>
     </div>
 
-    <section class="py-32 text-center bg-white px-6">
-        <div class="max-w-4xl mx-auto border-4 border-[#D4AF37] border-dashed rounded-[3rem] p-12 md:p-24 shadow-2xl">
-            <h2 class="text-6xl italic text-[#912F56] mb-8">Ready to Glow?</h2>
-            <p class="text-xl text-stone-500 mb-12">Click below to start your professional order with Nyawi. <br> Available 24/7 for the queens of 254.</p>
-            <button onclick="openModal()" class="bg-[#25D366] text-white px-16 py-6 rounded-full font-black text-sm tracking-widest flex items-center justify-center gap-4 mx-auto hover:bg-[#1ebe57] transition shadow-2xl">
-                <span>💬</span> CHAT TO ORDER NOW <span>👑</span>
-            </button>
+    <footer class="py-16 text-center bg-white border-t">
+        <div class="max-w-4xl mx-auto px-6 mb-8">
+            <h2 class="text-3xl italic text-[#912F56] mb-4">Serving Queens in Nairobi & Beyond</h2>
+            <p class="text-stone-500 text-sm">Fast delivery to CBD, KCA, KU, UoN, JKUAT, and Residential areas.</p>
         </div>
-    </section>
-
-	<footer class="py-16 text-center text-[10px] font-black uppercase tracking-[0.5em] opacity-30">
-		© 2026 SLAY BY NYAWI • NJUE LUXE STYLES • 0798 639988
-		<span class="mx-4">•</span>
-		<a href="https://njueluxestyles.github.io/luxestyles/"
-		   onclick="navigator.share ? navigator.share({ 
-			   title: 'Slay by Nyawi', 
-			   text: 'Luxury hair essentials by Nyawi 👑', 
-			   url: window.location.href 
-		   }) : alert('Copy link from address bar ✨');"
-		   class="hover:opacity-70 transition underline underline-offset-4">
-			SHARE
-		</a>
-	</footer>
+        <div class="text-[10px] font-black uppercase tracking-[0.5em] opacity-40">
+            © 2026 SLAY BY NYAWI • 0798 639988
+        </div>
+    </footer>
 
     <script>
         const modal = document.getElementById('orderModal');
-
         function openModal() { modal.style.display = "flex"; }
         function closeModal() { modal.style.display = "none"; }
+        window.onclick = (e) => { if (e.target == modal) closeModal(); }
 
-        // CLOSE MODAL ON OUTSIDE CLICK
-        window.onclick = function(event) {
-            if (event.target == modal) closeModal();
-        }
-
-        // GEOLOCATION FILTER
         function getLocation() {
-            const locBtn = document.getElementById('locBtn');
+            const btn = document.getElementById('locBtn');
             if (navigator.geolocation) {
-                locBtn.innerText = "📍 Fetching your location...";
+                btn.innerText = "Fetching...";
                 navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const lat = position.coords.latitude;
-                        const lon = position.coords.longitude;
-                        document.getElementById('geoCoords').value = `https://www.google.com/maps?q=${lat},${lon}`;
-                        locBtn.innerText = "✅ Precise Location Captured!";
-                        locBtn.classList.add('success');
+                    (p) => {
+                        document.getElementById('geoCoords').value = `https://www.google.com/maps?q=${p.coords.latitude},${p.coords.longitude}`;
+                        btn.innerText = "✅ Location Captured!";
+                        btn.classList.add('success');
                     },
-                    () => {
-                        alert("Could not get location. Please type your campus/town manually! ✨");
-                        locBtn.innerText = "📍 Location access denied";
-                    }
+                    () => { alert("Please type your location manually."); btn.innerText = "Location Denied"; }
                 );
-            } else {
-                alert("Geolocation is not supported by your browser.");
             }
         }
 
-        // WHATSAPP REDIRECT
         function sendToWhatsApp() {
-            const type = document.getElementById('reqType').value;
             const name = document.getElementById('custName').value;
             const items = document.getElementById('custItems').value;
             const loc = document.getElementById('custLoc').value;
+            const type = document.getElementById('reqType').value;
             const coords = document.getElementById('geoCoords').value;
 
-            if(!name || !loc) {
-                alert("Please fill in your Name and Location to proceed! ✨");
-                return;
-            }
+            if(!name || !loc) return alert("Name and Location are required!");
 
-            let message = `*${type}*%0A%0A` +
-                          `*Hello Nyawi!* 👑 I'd like to place an order:%0A%0A` +
-                          `👤 *Name:* ${name}%0A` +
-                          `🛍️ *Items:* ${items || 'General Collection Inquiry'}%0A` +
-                          `📍 *Campus/Town:* ${loc}`;
+            let msg = `*${type}*%0A` +
+                      `Hello Nyawi! 👑 I'd like to order:%0A%0A` +
+                      `👤 *Name:* ${name}%0A` +
+                      `🛍️ *Items:* ${items || 'Inquiry'}%0A` +
+                      `📍 *Delivery:* ${loc}`;
+            
+            if(coords) msg += `%0A🗺️ *Map:* ${coords}`;
 
-            if(coords) {
-                message += `%0A🗺️ *Precise Location:* ${coords}`;
-            }
-
-            message += `%0A%0A_Please let me know how to pay and the delivery timeframe!_ ✨`;
-
-            const whatsappNumber = "254798639988";
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+            window.open(`https://wa.me/254798639988?text=${msg}`, '_blank');
             closeModal();
         }
     </script>
-
 </body>
 </html>
